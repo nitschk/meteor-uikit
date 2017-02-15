@@ -1,6 +1,6 @@
 Package.describe({
   name: 'alexandesigner:meteor-uikit',
-  version: '1.0.0',
+  version: '1.0.2',
   summary: 'A lightweight and modular front-end framework for developing fast and powerful web interfaces',
   git: 'https://github.com/alexandesigner/meteor-uikit',
   documentation: 'README.md'
