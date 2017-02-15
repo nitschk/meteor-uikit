@@ -11,21 +11,20 @@
 
 <template name="hello">
 
-  <button class="uk-button uk-button-primary" type="button" uk-toggle="target: #my-id">Modal</button>
+  <button class="uk-button uk-button-primary" type="button" uk-toggle="target: #modal-close">Modal</button>
 
-  <!-- This is the modal -->
-  <div id="my-id" uk-modal>
-      <div class="uk-modal-dialog uk-modal-body">
-          <h2 class="uk-modal-title"></h2>
-          <button class="uk-modal-close" type="button"></button>
-          <button class="uk-button uk-button-primary click-event" type="button">Click me</button>
-          <p>You've pressed the button {{counter}} times.</p>
-          <div class="uk-inline">
-              <button class="uk-button uk-button-default" type="button">Hover</button>
-              <div uk-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-          </div>
-      </div>
-  </div>
+  <div id="modal-close" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title">My Modal</h2>
+        <button class="uk-button uk-button-primary click-event" type="button">Click me</button>
+        <p>You've pressed the button {{counter}} times.</p>
+        <div class="uk-inline">
+            <button class="uk-button uk-button-default" type="button">Hover</button>
+            <div uk-dropdown>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+        </div>
+    </div>
+</div>
 
 
 </template>
