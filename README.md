@@ -1,8 +1,8 @@
 Meteor UIkit
 ==================
-[UIKit](http://www.getuikit.com) 3.x packaged for Meteor forked from [meteor-uikit](https://github.com/alexandesigner/meteor-uikit)
+> [UIKit](http://www.getuikit.com) 3.x packaged for Meteor forked from [meteor-uikit](https://github.com/alexandesigner/meteor-uikit)
 
-### To install
+## To install
 ``meteor add alexandesigner:meteor-uikit``
 
 ## Bug report, suggestions and improvements
