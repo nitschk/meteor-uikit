@@ -1,14 +1,17 @@
 Package.describe({
-  name: 'alexandesigner:meteor-uikit',
-  version: '1.0.2',
+  name: 'nitschk:meteor-uikit',
+  version: '1.0.0',
   summary: 'A lightweight and modular front-end framework for developing fast and powerful web interfaces',
-  git: 'https://github.com/alexandesigner/meteor-uikit',
+  git: 'https://github.com/nitschk/meteor-uikit',
   documentation: 'README.md'
 });
 
-Package.onUse(function (api, where) {
+Package.onUse((api) => {
+  api.versionsFrom(['1.10', '2.3', '3.0']);
+  //                               ^^^^^^^ for testing your package with meteor 3.0
 
-  api.versionsFrom('METEOR@1.4.1');
+  api.versionsFrom(['1.10', '2.3', '3.0']);
+  //                              ^^^^^^^ for meteor 3.0
 
   const path = Npm.require('path');
   const assetPath = path.join('src');
@@ -21,5 +24,4 @@ Package.onUse(function (api, where) {
 
   //icons
   api.addAssets(path.join(assetPath, 'images', 'icons.svg'), 'client');
-
 });
